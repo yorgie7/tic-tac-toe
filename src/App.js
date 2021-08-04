@@ -24,9 +24,8 @@ const resetGame = () => {
   const checkWictory=(arr)=>{
     for( let i=0; i<8; i++ ) {
       const [a, b, c] = loseConditions[i]
-      console.log("loda", arr[a] ,arr[b] , arr[c] )
        if( arr[a]=== arr[b] && arr[b]=== arr[c] ) {
- console.log("true", myChance);
+
  setWinner(true);
 //  resetGame()
  break;
@@ -44,8 +43,6 @@ if( !winnerAnnounced) {
 
    if(playCounts >= 4 ){
    checkWictory(arr);
-
-      // console.log(a,b,c);
     }
   } else {
     alert("start new game")
